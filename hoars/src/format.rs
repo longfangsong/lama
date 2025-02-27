@@ -49,7 +49,7 @@ pub enum AcceptanceAtom {
 /// An acceptance signature is a vector of acceptance set
 /// identifiers, it is associated with an edge.
 #[derive(Debug, PartialEq, Eq, Clone)]
-pub struct AcceptanceSignature(pub(crate) Vec<crate::Id>);
+pub struct AcceptanceSignature(pub Vec<crate::Id>);
 
 impl AcceptanceSignature {
     /// Tries to get the singleton element of the acceptance signature, if it exists.
